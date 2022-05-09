@@ -39,12 +39,18 @@ header {
     font-size: 12px;
 }
 
+
+
 .speaker-view a, #expand{
     background-color: #4a4a4a;
     color: white;
     text-decoration: none;
     margin: 0 10px;
     padding: 5px; 
+}
+
+.speaker-view a:hover, #expand:hover {
+    color: blue;
 }
 
 
@@ -125,6 +131,10 @@ footer {
     align-items: center;   
 }
 
+.footer-item:hover{
+    color: blue;
+}
+
 .footer-item .footer-icon {
     padding:1px;
 }
@@ -170,6 +180,7 @@ footer {
 .col-dx.flex a {
     text-decoration: none;
     color: red;
+    font-size: 13px;
 }
 
 
