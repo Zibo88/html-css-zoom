@@ -9,7 +9,7 @@
 /* ----COMMON--- */
 
 body {
-    background-color: aqua;
+    background-color: black;
 }
 
 .flex{
@@ -36,6 +36,7 @@ header {
     justify-content: flex-end;
     align-items: center;
     height: 100%;
+    font-size: 12px;
 }
 
 .speaker-view a, #expand{
@@ -45,6 +46,8 @@ header {
     margin: 0 10px;
     padding: 5px; 
 }
+
+
 
 /* MAIN */
 
@@ -63,6 +66,7 @@ main {
 .card-item {
     margin: 5px;
     position: relative;
+    overflow: hidden;
   
 }
 
@@ -96,14 +100,79 @@ footer {
     bottom: 0;
     left: 0;
     position: fixed;
-    background-color: black;
+    background-color: #222222;
     color: white;
 }
 
 .columns-container-footer {
-    width: calc(100% - 3);
+    height: 100%;
     justify-content: space-between;
+    align-items: center;
 }
+
+/* porzione sx */
+.col-sx.flex {
+    width: 20%;
+}    
+
+.footer-item {
+    font-size: 10px;
+    vertical-align: middle;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    align-items: center;   
+}
+
+.footer-item .footer-icon {
+    padding:1px;
+}
+
+.col-sx.flex .footer-item {
+    padding: 0 10px;
+}
+
+.freccia-su {
+    margin-left: 10px;
+}
+
+
+.icon-caption {
+    margin:10px 0;
+    text-align: left;
+}
+
+.col-centre.flex {
+    width: 60%;
+    justify-content: center;
+}
+
+.col-centre.flex .footer-item {
+    padding: 0px 15px;
+}
+
+#green {
+    color: greenyellow;
+}
+
+/* porzione dx */
+
+.col-dx.flex {
+    width: 15%;
+    height: 100%;
+    background-color: #4a4a4a; 
+    align-items: center;
+    justify-content: center;  
+
+}
+
+.col-dx.flex a {
+    text-decoration: none;
+    color: red;
+}
+
+
+    
 
 
 
