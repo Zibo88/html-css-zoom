@@ -28,11 +28,11 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    /* test */
     background-color: black;
+    z-index: 1;
 }
 
-.flex {
+.nav-flex.flex {
     justify-content: flex-end;
     align-items: center;
     height: 100%;
@@ -50,25 +50,59 @@ header {
 
 main {
     margin-top: 100px;
+    height: calc(100vh - 160px);
 }
 
-.container-main {
+.container-main.flex {
     width: 80%;
     margin: 0 auto;
+    justify-content: space-between;
 }
+
 
 .card-item {
     margin: 5px;
-    
+    position: relative;
+  
 }
 
 .cards-row.flex {
     width: calc( ( 100% / 7) - 15px);
     flex-wrap: wrap;
+   
 }
 
 .card-item img {
     width: 100%;
+    
+    
+}
+
+.caption {
+    font-size: 10px;
+    color: white;
+    background-color:  rgba(114, 114, 126, 0.5);
+    width: 50%;
+    position: absolute;
+    bottom: 4px;
+    left: 0;
+}
+
+/* ---FOOTER--- */
+
+footer {
+    height: 90px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    background-color: black;
+    color: white;
+}
+
+.columns-container-footer {
+    width: calc(100% - 3);
+    justify-content: space-between;
 }
 
 
